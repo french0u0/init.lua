@@ -1,3 +1,9 @@
+Readme todo: 
+
+Proper markdown
+
+Linux and Windows instructions preconditions
+
 My own copy of the primagen environment
 
 Works on windows with PowerShell in Windows Terminal.
