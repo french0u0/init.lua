@@ -1,7 +1,26 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>h", "<C-w>h")
+vim.keymap.set("n", "<leader>j", "<C-w>j")
+vim.keymap.set("n", "<leader>k", "<C-w>k")
+vim.keymap.set("n", "<leader>l", "<C-w>l")
 
+vim.keymap.set("n", "<leader>-", ":resize -5<CR>")
+vim.keymap.set("n", "<leader>=", ":resize +5<CR>")
+vim.keymap.set("n", "<leader>_", ":vertical resize -5<CR>")
+vim.keymap.set("n", "<leader>+", ":vertical resize +5<CR>")
+
+vim.keymap.set("v", ">", ">gv")
+vim.keymap.set("v", "<", "<gv")
+
+vim.keymap.set("n", "<leader>gi", ":G<CR>")
+vim.keymap.set("n", "<leader>gs", ":G status<CR>")
+vim.keymap.set("n", "<leader>ga", ":G add -vu<CR>")
+vim.keymap.set("n", "<leader>gc", ":G commit -m \"---\"<CR>")
+
+vim.keymap.set("n", "<C-t>", vim.cmd.term)
+
+-- Primagen remaps:
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 

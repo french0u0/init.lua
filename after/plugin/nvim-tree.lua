@@ -1,3 +1,5 @@
+vim.keymap.set("n", "<C-n>", vim.cmd.NvimTreeFindFile)
+
 -- examples for your init.lua
 
 -- disable netrw at the very start of your init.lua (strongly advised)
