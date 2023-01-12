@@ -18,7 +18,7 @@ vim.keymap.set("n", "<leader>gs", ":G status<CR>")
 vim.keymap.set("n", "<leader>ga", ":G add -vu<CR>")
 vim.keymap.set("n", "<leader>gc", ":G commit -m \"---\"<CR>")
 
-vim.keymap.set("n", "<C-t>", vim.cmd.term)
+vim.keymap.set("n", "<leader>t", vim.cmd.term)
 
 -- Primagen remaps:
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
