@@ -3,8 +3,8 @@ vim.keymap.set('n', '<leader>p', builtin.find_files, {})
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
 vim.keymap.set('n', '<leader>f', builtin.live_grep, {})
 vim.keymap.set('n', '<C-f>', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>b', builtin.buffers, {})
-vim.keymap.set('n', '<leader>h', builtin.help_tags, {})
+vim.keymap.set('n', '<leader>bu', builtin.buffers, {})
+vim.keymap.set('n', '<leader>he', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>gf', builtin.git_files, {})
 -- Need ripgrep.
 -- For Windows, use powershell to:
