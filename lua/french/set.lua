@@ -1,6 +1,7 @@
 --vim.opt.guicursor = ""
 -- todo: set shell to powershell when windows
 
+vim.opt.shell = 'pwsh.exe'
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
