@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>gr", ":n **/*?ript.groovy<CR>")
+vim.keymap.set("n", "<leader>gr", ":n CameraLink/**/*?ript.groovy<CR>:n GCore3/**/*?ript.groovy<CR>:n GCore4/**/*?ript.groovy<CR>:n USB/**/*?ript.groovy<CR>")
 
 vim.keymap.set("n", "<leader>h", "<C-w>h")
 vim.keymap.set("n", "<leader>j", "<C-w>j")
