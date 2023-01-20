@@ -1,6 +1,7 @@
 --vim.opt.guicursor = ""
 -- todo: set shell to powershell when windows
 
+vim.api.nvim_exec('language en_US', true)
 vim.opt.shell = 'pwsh.exe'
 vim.opt.nu = true
 vim.opt.relativenumber = true

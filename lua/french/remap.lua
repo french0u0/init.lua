@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>gr", ":n CameraLink/**/*?ript.groovy<CR>:n GCore3/**/*?ript.groovy<CR>:n GCore4/**/*?ript.groovy<CR>:n USB/**/*?ript.groovy<CR>")
+vim.keymap.set("n", "<leader>grf", ":n CameraLink/**/*?ript.groovy<CR>:n GCore3/**/*?ript.groovy<CR>:n GCore4/**/*?ript.groovy<CR>:n USB/**/*?ript.groovy<CR><Cmd>BufferOrderByBufferNumber<CR>")
+vim.keymap.set("n", "<leader>gra", ":n **/*?ript.groovy<CR><Cmd>BufferOrderByBufferNumber<CR>")
 
 vim.keymap.set("n", "<leader>h", "<C-w>h")
 vim.keymap.set("n", "<leader>j", "<C-w>j")
@@ -14,11 +15,6 @@ vim.keymap.set("n", "<leader>+", ":vertical resize +5<CR>")
 
 vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("v", "<", "<gv")
-
-vim.keymap.set("n", "<leader>gi", ":G<CR>")
-vim.keymap.set("n", "<leader>gs", ":G status<CR>")
-vim.keymap.set("n", "<leader>ga", ":G add -vu<CR>")
-vim.keymap.set("n", "<leader>gc", ":G commit -m \"---\"<CR>")
 
 vim.keymap.set("n", "<leader>t", vim.cmd.term)
 
