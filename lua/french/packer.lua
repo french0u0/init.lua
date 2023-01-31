@@ -21,6 +21,15 @@ return require('packer').startup(function(use)
 	  end
   })
 
+  use({
+     'tomasiser/vim-code-dark',
+     as = 'codedark',
+     config = function()
+        vim.cmd('colorscheme codedark')
+     end
+  })
+
+  use('vim-scripts/groovy.vim')
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('ThePrimeagen/harpoon')
   use('mbbill/undotree')
@@ -62,6 +71,8 @@ return require('packer').startup(function(use)
      },
      tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
+
+  use {'neoclide/coc.nvim', branch = 'release'}
 
 end)
 
