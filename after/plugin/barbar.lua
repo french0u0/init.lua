@@ -119,6 +119,7 @@ vim.g.netrw_bufsettings = "noma nomod nu nobl nowrap ro buflisted"
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+-- For new buffer in new tab use :ene
 -- Move to previous/next
 map('n', '<S-Tab>', '<Cmd>BufferPrevious<CR>', opts)
 map('n', '<Tab>', '<Cmd>BufferNext<CR>', opts)
