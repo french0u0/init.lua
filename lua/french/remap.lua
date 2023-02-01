@@ -1,6 +1,8 @@
 vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader>grf", ":n CameraLink/**/*?ript.groovy<CR>:n GCore3/**/*?ript.groovy<CR>:n GCore4/**/*?ript.groovy<CR>:n USB/**/*?ript.groovy<CR><Cmd>BufferOrderByBufferNumber<CR>")
+vim.keymap.set("n", "<leader>grd", ":n Drivers/**/*?ript.groovy<CR><Cmd>BufferOrderByBufferNumber<CR>")
+vim.keymap.set("n", "<leader>grt", ":n Testers/**/*?ript.groovy<CR><Cmd>BufferOrderByBufferNumber<CR>")
 vim.keymap.set("n", "<leader>gra", ":n **/*?ript.groovy<CR><Cmd>BufferOrderByBufferNumber<CR>")
 
 vim.keymap.set("n", "<leader>h", "<C-w>h")
