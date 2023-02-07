@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-	color = color or "codedark"
+	color = color or "rose-pine"
 	vim.cmd.colorscheme(color)
 	-- Remember to: Windows Terminal Settings:
 	-- Profiles -> Defaults -> Appearance -> Background image -> Desktop wallpaper and opacity

@@ -41,7 +41,7 @@ return require('packer').startup(function(use)
           -- LSP Support
           {'williamboman/mason.nvim'},
           {'williamboman/mason-lspconfig.nvim'},
-          {'neovim/nvim-lspconfig'},
+          {'neovim/nvim-lspconfig'}, -- this is the required this that provides LSP
 
           -- Autocompletion
           {'hrsh7th/nvim-cmp'},
@@ -72,7 +72,7 @@ return require('packer').startup(function(use)
      tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
-  use {'neoclide/coc.nvim', branch = 'release'}
+  -- use {'neoclide/coc.nvim', branch = 'release'}
 
 end)
 
