@@ -1,4 +1,5 @@
-vim.keymap.set("n", "<leader>n", vim.cmd.NvimTreeFindFile)
+vim.keymap.set("n", "<leader>n", vim.cmd.NvimTreeOpen)
+vim.keymap.set("n", "<leader>nf", vim.cmd.NvimTreeFindFile)
 
 -- examples for your init.lua
 
