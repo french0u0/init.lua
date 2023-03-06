@@ -40,3 +40,18 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
  mkdir ~/.config
  
  git clone https://github.com/french0u0/init.lua.git ~/.config/nvim
+ 
+ install latest neovim:
+ 
+ wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb ~
+ 
+ sudo apt install ./nvim-linux64.deb
+ 
+ note: if neovim was already installed via sudo apt install nvim use:
+ 
+ sudo apt remove neovim neovim-runtime
+ 
+ in nvim:
+ 
+ :e ~/.config/nvim/lua/french/packer.lua
+ 
