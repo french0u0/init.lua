@@ -1,5 +1,5 @@
-vim.keymap.set("n", "<leader>n", vim.cmd.NvimTreeToggle)
-vim.keymap.set("n", "<leader>nf", vim.cmd.NvimTreeFindFile)
+vim.keymap.set("n", "<leader>bf", vim.cmd.NvimTreeFocus)
+vim.keymap.set("n", "<leader>b", vim.cmd.NvimTreeFindFile)
 
 -- examples for your init.lua
 
@@ -16,13 +16,21 @@ vim.opt.termguicolors = true
 -- OR setup with some options
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
+  open_on_setup = true,
   view = {
-    adaptive_size = true,
+    side = "left",
+    width = 30,
+    --adaptive_size = true,
     mappings = {
       list = {
         { key = "u", action = "dir_up" },
       },
     },
+  },
+  actions = {
+     open_file = {
+        resize_window = true,
+     },
   },
   renderer = {
     group_empty = true,
